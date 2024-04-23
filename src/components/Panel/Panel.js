@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import { useState } from "react";
 import "./Panel.css";
 import logo from "../../assets/icon.png";
@@ -29,17 +30,7 @@ export default function Panel() {
 
   const [step, setStep] = useState(0);
 
-  const stepHandler = () => {
-    if (data.date && data.timezone) {
-      setStep(1);
-    }
-    if (data.time) {
-      setStep(2);
-    }
-    if (Object.keys(data.formData).length > 0) {
-      setStep(3);
-    }
-  };
+  
 
   const dataHandler = (dataRecieved) => {
     switch (dataRecieved.type) {
@@ -57,9 +48,20 @@ export default function Panel() {
   };
 
   useEffect(() => {
+    const stepHandler = () => {
+      if (data.date && data.timezone) {
+        setStep(1);
+      }
+      if (data.time) {
+        setStep(2);
+      }
+      if (Object.keys(data.formData).length > 0) {
+        setStep(3);
+      }
+    };
     stepHandler();
     // console.log(data.formData);
-  }, [data, stepHandler]);
+  }, [data]);
 
   //format to display time
   const timeString = data.time;
