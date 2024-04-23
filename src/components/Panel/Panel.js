@@ -59,7 +59,7 @@ export default function Panel() {
   useEffect(() => {
     stepHandler();
     // console.log(data.formData);
-  }, [data]);
+  }, [data, stepHandler]);
 
   //format to display time
   const timeString = data.time;
