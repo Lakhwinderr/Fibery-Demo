@@ -1,0 +1,23 @@
+.time:hover{
+    border:none;
+}
+/* hover:w-[85px]  hover:bg-[#666] hover:text-white */
+.time:hover .subDiv{
+    width: 85px;
+    background-color: #666;
+    color: white;
+}
+
+
+.subDiv2{
+    display: none;
+}
+
+.time:hover .subDiv2{
+    display: flex;
+    cursor: pointer;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
