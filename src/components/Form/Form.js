@@ -284,6 +284,7 @@ export default function Form({dataHandler}) {
         <label htmlFor="description">
           Please, share anything that will help prepare for our meeting
         </label>
+        <br />
         <textarea
         className="mt-1 rounded-lg border-[#dddddd] border-2 focus:outline-none  w-10/12"
           name="description"

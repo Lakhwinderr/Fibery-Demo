@@ -26,7 +26,7 @@ const TimeZone = ({dataHandler}) => {
   };
 
   return (
-    <div>
+    <div className="mb-10"> 
       <h2 className="mb-1">Select Time Zone</h2>
 
       <FontAwesomeIcon icon={faEarthAmericas} className="pr-2"/>

@@ -126,19 +126,19 @@ export default function Panel() {
 
       <div className="div2 p-5 flex flex-col justify-between">
         <div className="div">
-          <h1 class="text-[30px] font-bold text-left text-black">
+          <h1 className="text-[30px] font-bold text-left text-black">
             Fibery Demo 
             <img src={logo} alt="logo" className="inline w-14 h-12 ml-2 md:hidden"/>
           </h1>
-          <p class="text-[18px] font-bold text-left text-[#727272]">
+          <p className="text-[18px] font-bold text-left text-[#727272]">
             <FontAwesomeIcon icon={faClock} /> 45 min
           </p>
-          <p class="text-[16px] font-semibold text-left text-slate-600">
+          <p className="text-[16px] font-semibold text-left text-slate-600">
             Book a meeting with fibery team. Talk to a real person about how to
             get your processes set up with us 🦄 or not 💩
           </p>
         </div>
-        <button class="text-sm  text-left text-[#50639d]">Cookie Settings</button>
+        <button className="text-sm  text-left text-[#50639d]">Cookie Settings</button>
         
       </div>
 
@@ -149,7 +149,7 @@ export default function Panel() {
         }
       >
         <div className="mt-5">
-          <p class= "text-xl font-bold text-left text-black "  >
+          <p className="text-xl font-bold text-left text-black "  >
             Select a Date and Time
           </p>
           <div className="my-5">
@@ -184,17 +184,17 @@ export default function Panel() {
         <div className="flex flex-col p-2 md:p-0">
           <div className="info flex flex-col items-start  px-4 py-2">
             <h2 className="text-lg font-bold">Fibery Demo</h2>
-            <p class="text-[16px]  text-left text-[#727272]">
+            <p className="text-[16px]  text-left text-[#727272]">
               <FontAwesomeIcon icon={faUser} /> Lakhwinder Singh
             </p>
-            <p class="text-[16px]  text-left text-[#727272]">
+            <p className="text-[16px]  text-left text-[#727272]">
               <FontAwesomeIcon icon={faCalendar} />{" "}
               {data.time + " - " + newTimeString + " " + formattedDate}
             </p>
-            <p class="text-[16px]  text-left text-[#727272]">
+            <p className="text-[16px]  text-left text-[#727272]">
               <FontAwesomeIcon icon={faEarthAsia} /> {data.timezone}
             </p>
-            <p class="text-[16px]  text-left text-[#727272]">
+            <p className="text-[16px]  text-left text-[#727272]">
               <FontAwesomeIcon icon={faVideo} /> Web conferencing details to
               follow.
             </p>
